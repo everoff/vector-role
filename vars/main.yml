@@ -1,4 +1,5 @@
 ---
+vector_package_url: "https://packages.timber.io/vector/{{ vector_version }}/vector-{{ vector_version }}-1.x86_64.rpm"
 vector_config:
   sources:
     our_log:

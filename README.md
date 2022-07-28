@@ -6,28 +6,28 @@ This role installs Vector-service to host with CentOS 7
 Requirements
 ------------
 
-
 Role Variables
 --------------
-Git repository
+Version of the Vector
 ```
-lighthouse_url: "https://github.com/VKCOM/lighthouse.git"
+  vector_version: "0.21.1"
 ```
+
 Dependencies
 ------------
 
-You must install `Git` and `Nginx` to the correct work of the `Lighnhouse`.
+None.
 
 Example Playbook
 ----------------
 
-```yml
-- name: Install Lighthouse
-  hosts: lighthouse
+The simpliest example:
+```yaml
+- name: Install Vector
+  hosts: vector
   roles:
-    - lighthouse-role
+    - vector-role
 ```
-
 
 License
 -------
